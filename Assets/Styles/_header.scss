@@ -1,0 +1,34 @@
+// Header styles
+
+div[role=menu] {
+    position: relative;
+    padding: 0rem 2rem;
+    width: 100%;
+    margin-bottom: 25vh;
+
+    .logo {
+        margin-top: 7rem;
+        width: 7rem;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    p {
+        width: 80%;
+        margin: 2.5rem 0rem;
+    }
+
+    
+}
+
+@media all and (min-width:376px) {
+    div[role=menu] {
+        p {
+            width: 40%;
+        }
+    }
+}

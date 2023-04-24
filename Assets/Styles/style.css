@@ -1,0 +1,336 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+
+p {
+  color: hsla(210, 10%, 33%, 0.6);
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(210, 10%, 33%);
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile-content {
+  display: inline-block;
+}
+
+.desktop-content {
+  display: none;
+}
+
+.download-box {
+  flex-direction: column;
+}
+.download-box .ios-download {
+  background-color: hsl(171, 66%, 44%);
+  color: white;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 5rem;
+  border-radius: 3rem;
+  box-shadow: 1px 5px 10px hsla(171, 66%, 44%, 0.6);
+}
+.download-box .mac-download {
+  background-color: hsl(233, 100%, 69%);
+  color: white;
+  padding: 1.25rem 5rem;
+  border-radius: 3rem;
+  box-shadow: 1px 5px 10px hsla(233, 100%, 69%, 0.6);
+}
+.download-box a {
+  font-size: 1.8rem;
+}
+
+@media all and (min-width: 376px) {
+  .mobile-content {
+    display: none;
+  }
+  .desktop-content {
+    display: inline-block;
+  }
+  p {
+    font-size: 1.4rem !important;
+  }
+  .download-box {
+    display: grid !important;
+    grid-auto-flow: column;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
+  .download-box .ios-download, .download-box .mac-download {
+    width: 25rem;
+    margin: 0% !important;
+    font-size: 1.5rem !important;
+  }
+}
+div[role=menu] {
+  position: relative;
+  padding: 0rem 2rem;
+  width: 100%;
+  margin-bottom: 25vh;
+}
+div[role=menu] .logo {
+  margin-top: 7rem;
+  width: 7rem;
+}
+div[role=menu] h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+div[role=menu] p {
+  width: 80%;
+  margin: 2.5rem 0rem;
+}
+
+@media all and (min-width: 376px) {
+  div[role=menu] p {
+    width: 40%;
+  }
+}
+div[role=main] {
+  padding: 0rem 2rem;
+  width: 100vw;
+}
+div[role=main] .level-1 {
+  width: 100vw;
+  margin-bottom: 25vh;
+}
+div[role=main] .level-1 h2 {
+  margin-bottom: 3rem;
+}
+div[role=main] .level-1 p {
+  width: 80%;
+}
+div[role=main] .level-1 .level-1-container {
+  width: 100%;
+  margin-top: 4rem;
+}
+div[role=main] .level-1 .level-1-container img {
+  width: 80%;
+}
+div[role=main] .level-1 .level-1-container .advantages {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 15%;
+  margin-top: 4rem;
+}
+div[role=main] .level-1 .level-1-container p {
+  margin-top: 1rem;
+}
+div[role=main] .level-2 {
+  width: 100%;
+}
+div[role=main] .level-2 h2 {
+  margin-bottom: 2rem;
+}
+div[role=main] .level-2 p {
+  width: 75%;
+}
+div[role=main] .level-2 img {
+  width: 100%;
+  margin-top: 5rem;
+}
+div[role=main] .level-3 {
+  width: 100%;
+  margin-top: 15vh;
+  margin-bottom: 25vh;
+}
+div[role=main] .level-3 h2 {
+  margin-bottom: 2rem;
+}
+div[role=main] .level-3 p {
+  margin-bottom: 7rem;
+}
+div[role=main] .level-3 .things-clipboard-offers {
+  margin-top: 4rem;
+}
+div[role=main] .level-3 .things-clipboard-offers h3 {
+  margin-top: 1.5rem;
+}
+div[role=main] .level-3 .things-clipboard-offers p {
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+div[role=main] .level-4 {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 5%;
+  place-items: center;
+  margin-bottom: 25vh;
+  height: 70rem;
+}
+div[role=main] .level-5 {
+  margin-bottom: 20vh;
+}
+div[role=main] .level-5 h2 {
+  margin-bottom: 2rem;
+}
+div[role=main] .level-5 p {
+  margin-bottom: 5rem;
+}
+
+@media all and (min-width: 376px) {
+  .level-1 p {
+    width: 48% !important;
+  }
+  .level-1 .level-1-container {
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 7rem !important;
+    position: relative;
+    height: 60rem;
+  }
+  .level-1 .level-1-container img {
+    width: 55% !important;
+    position: absolute;
+    left: -4rem;
+  }
+  .level-1 .level-1-container .advantages {
+    margin: 2rem 0rem 0rem 0rem !important;
+    width: 40%;
+  }
+  .level-1 .level-1-container .advantages .iCloud, .level-1 .level-1-container .advantages .quick-search, .level-1 .level-1-container .advantages .history {
+    align-items: flex-start;
+  }
+  .level-1 .level-1-container .advantages * {
+    text-align: left;
+  }
+  .level-2 {
+    margin-bottom: 20vh;
+  }
+  .level-2 p {
+    width: 45% !important;
+  }
+  .level-2 img {
+    width: 60% !important;
+  }
+  .level-3 {
+    margin: 0% !important;
+  }
+  .level-3 .level-3-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .level-3 .level-3-container .things-clipboard-offers p {
+    width: 30rem;
+  }
+  .level-4 {
+    grid-auto-flow: column !important;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    padding: 0rem 4rem;
+    height: 20rem !important;
+    margin: 10vh 0rem !important;
+  }
+  .level-4 img {
+    width: 10rem;
+  }
+  .level-5 p {
+    width: 65%;
+  }
+}
+div[role=footer] {
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: hsla(201, 11%, 66%, 0.2);
+}
+div[role=footer] .footer-logo {
+  width: 6rem;
+}
+div[role=footer] a {
+  color: hsla(210, 10%, 33%, 0.6);
+  margin-top: 2rem;
+}
+div[role=footer] .footer-img-links {
+  margin-top: 3rem;
+}
+div[role=footer] .footer-img-links a {
+  margin: 0rem 1rem;
+}
+div[role=footer] a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media all and (min-width: 376px) {
+  div[role=footer] {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    padding: 4rem 6rem !important;
+  }
+  div[role=footer] .footer-img-links {
+    grid-column: 6/7;
+    margin: 2rem 0rem 0rem 0rem !important;
+  }
+  div[role=footer] .footer-img-links img {
+    width: 1.5rem;
+  }
+  div[role=footer] .footer-logo, div[role=footer] .footer-logo-link {
+    width: 6rem !important;
+  }
+  div[role=footer] .footer-links {
+    align-items: flex-start !important;
+    margin-top: 1rem;
+  }
+  div[role=footer] .footer-links :nth-child(1) {
+    margin: 0% !important;
+  }
+  div[role=footer] .footer-links :nth-child(2) {
+    margin: 2rem 0rem 0rem 0rem !important;
+  }
+  .footer-logo-link, .footer-logo, .footer-links, .footer-img-links {
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

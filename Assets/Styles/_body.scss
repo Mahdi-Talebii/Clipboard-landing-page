@@ -1,0 +1,190 @@
+// Main body styles
+
+div[role=main] {
+    padding: 0rem 2rem;
+    width: 100vw;
+
+    .level-1 {
+        width: 100vw;
+        margin-bottom: 25vh;
+        h2 {
+            margin-bottom: 3rem;
+        }
+
+        p {
+            width: 80%;
+        }
+
+        .level-1-container {
+            width: 100%;
+            margin-top: 4rem;
+            
+            img {
+                width: 80%;
+            }
+
+            .advantages {
+                display: grid;
+                grid-auto-flow: row;
+                row-gap: 15%;
+                margin-top: 4rem;
+            }
+
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+
+
+    }
+
+    .level-2 {
+        width: 100%;
+       
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            width: 75%;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+
+    .level-3 {
+        width: 100%;
+        margin-top: 15vh;
+        margin-bottom: 25vh;
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 7rem;
+        }
+
+        .things-clipboard-offers {
+            margin-top: 4rem;
+
+
+            h3 {
+               margin-top: 1.5rem; 
+            }
+
+            p {
+               margin-top: 1.5rem;
+               margin-bottom: 0rem; 
+            }
+        }
+    }
+
+    .level-4 {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 5%;
+        place-items: center;
+        margin-bottom: 25vh;
+        height: 70rem;
+    }
+
+    .level-5 {
+        margin-bottom: 20vh;
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+}
+
+
+
+@media all and (min-width:376px) {
+    .level-1 {
+        p {
+            width: 48% !important;
+        }
+
+        .level-1-container {
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin-top: 7rem !important;
+            position: relative;
+            height: 60rem;
+
+            img {
+                width: 55% !important; 
+                position: absolute;
+                left: -4rem;
+            }
+
+            .advantages {
+                margin: 2rem 0rem 0rem 0rem !important;
+                width: 40%;
+
+                .iCloud, .quick-search, .history {
+                    align-items: flex-start;
+                }
+
+                * {
+                    text-align: left;
+                }
+
+            }
+        }
+    }
+
+    .level-2 {
+        margin-bottom: 20vh;
+        p {
+            width: 45% !important;
+        }
+
+        img {
+            width: 60% !important;
+        }
+    }
+
+    .level-3 {
+        margin: 0% !important;
+        .level-3-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .things-clipboard-offers {
+                p {
+                    width: 30rem;
+                }
+            }
+        }
+    }
+
+    .level-4 {
+        grid-auto-flow: column !important;
+        column-gap: 5%;
+        padding: 0rem 4rem;
+        height: 20rem !important;
+        margin: 10vh 0rem !important;
+
+        img {
+            width: 10rem;
+        }
+    }
+
+    .level-5 {
+        p {
+            width: 65%;
+        }
+    }
+}

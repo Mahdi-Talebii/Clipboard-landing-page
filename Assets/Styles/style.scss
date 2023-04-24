@@ -1,0 +1,126 @@
+// General  styles
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%; padding: 0%;
+    font-family: 'Bai Jamjuree', sans-serif;   
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+p {
+    color: hsla(210, 10%, 33%, 0.6);
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(210, 10%, 33%);
+}
+
+p , a , h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile-content {
+    display: inline-block;
+}
+
+.desktop-content {
+    display: none;
+}
+
+.download-box {
+    flex-direction: column;
+    
+    .ios-download {
+        background-color: hsl(171, 66%, 44%);
+        color: white;
+        margin-bottom: 1.5rem;
+        padding: 1.25rem 5rem;
+        border-radius: 3rem;
+        box-shadow: 1px 5px 10px hsla(171, 66%, 44%, 0.6);
+    }
+  
+    .mac-download {
+        background-color: hsl(233, 100%, 69%);
+        color: white;
+        padding: 1.25rem 5rem;
+        border-radius: 3rem;
+        box-shadow: 1px 5px 10px hsla(233, 100%, 69%, 0.6);
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+@media all and (min-width: 376px) {
+    
+    .mobile-content {
+        display: none;
+    }
+    
+    .desktop-content {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 1.4rem !important
+    }
+
+    .download-box {
+        display: grid !important;
+        grid-auto-flow: column;
+        column-gap: 10%;
+        .ios-download , .mac-download {
+            width: 25rem;
+            margin: 0% !important;
+            font-size: 1.5rem !important;
+        }
+    }
+
+}
+
+@import 'header';
+@import 'body';
+@import 'footer';
